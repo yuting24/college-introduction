@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>意見回饋</title>
+	<style>
+	@import url("assets/Css/按鈕.css");
+	body{background-image: url(assets/Images/back.jpg); font-family: 微軟正黑體;}
+	body{background-image: url(assets/Images/back.jpg);}
+    h1{padding-left: 150px; padding-right: 150px; color:#A87F46; position:absolute; top: 17%}
+    hr{position:absolute; top: 25%; left: 10%; border-top:3px solid #A87F46; width: 1210px;}
+
+	img:hover.logo{opacity: 1;}
+
+	div.menu{float: right; }
+
+	li.a{margin: 12px;}
+
+    div.b{height: 370px; padding-right: 150px; width: 750px; padding-top: 17px; text-align:left; font-size: 17px; line-height: 20px; padding:50px;
+          background-color: #F5E9D1; position:absolute; left: 19%; top: 35%; padding-left: 150px; }
+
+    input.input {padding:5px 15px; background:white; border:0 none;
+            cursor:pointer;
+            -webkit-border-radius: 5px;
+            border-radius: 5px; } 
+
+    textarea {padding:5px 15px; background:white; border:0 none;
+            cursor:pointer;
+            -webkit-border-radius: 5px;
+            border-radius: 5px; }                     
+
+    .input{font-size:20px;}
+    label.a{font-size:20px; font-weight: bold; color:black; }
+      #btn
+  {
+    position: relative;
+    left: 450px;
+
+  }
+
+  .rating {
+        font-size: 0;
+        display: table;
+    }
+
+    .rating > label {
+        color: #ddd;
+        float: right;
+    }
+
+    .rating > label:before {
+        padding: 5px;
+        font-size: 24px;
+        line-height: 1em;
+        display: inline-block;
+        content: "★";
+    }
+
+    .rating > input:checked ~ label,
+    .rating:not(:checked) > label:hover,
+    .rating:not(:checked) > label:hover ~ label {
+        color: #E96868;
+    }
+
+    .rating > input:checked ~ label:hover,
+    .rating > label:hover ~ input:checked ~ label,
+    .rating > input:checked ~ label:hover ~ label {
+        opacity: 0.5;
+    }
+
+    .button{font-size: 16px; color:white; text-align: center; font-weight: bold; background-color: #A87F46; word-spacing: 20px; padding: 6px; }
+
+	</style>
+</head>
+
+<body>
+<img class="logo" src="assets/Images/logo2.png" width="25%" height="25%" alt="pure css3 slider">
+
+<h1>意見回饋</h1><hr>
+
+<div id="menu">
+  <ul>
+    <li class="a"> <a href="index.html">首頁</a></li>
+
+    <li class="a"> <a href="創作理念.html">創作理念</a></li>
+
+    <li class="a"> <a href="影片.html">影片故事</a></li>
+
+     <li class="a"> <a href="意見回饋.html">意見回饋</a></li>
+
+    <li class="a"> <a href="">學院介紹</a>
+      <ul>
+        <li> <a href="商學院.html">商學院</a>
+          
+        </li>
+
+        <li> <a href="工學院.html">工學院</a>
+          
+        </li>
+
+        <li> <a href="設計學院.html">設計學院</a>
+          
+        </li>
+
+        <li> <a href="理學院.html">理學院</a>
+          
+        </li>
+
+        <li> <a href="法學院.html">法學院</a>
+          
+        </li>
+
+        <li> <a href="人文學院.html">人文與教育學院</a>
+          
+        </li>
+
+        <li> <a href="電資學院.html">電機資訊學院</a>
+          
+        </li>
+      </ul>
+    </li>
+
+    <li class="a"><a href="組員.html">關於&聯絡我們</a></li>
+  </ul>
+</div>
+<div class="b">
+<form action="意見回饋_submit" method="get" accept-charset="utf-8">
+
+<label class="a">
+<span>姓名: &nbsp;&nbsp;&nbsp;</span>
+<input class="input" id="name" type="text" name="name" placeholder="Your Full Name" size="50" />
+</label><p>
+
+<label class="a">
+<span>Email:&nbsp;&nbsp;</span>
+<input class="input" id="email" type="email" name="email" placeholder="Valid Email Address" size="50"/>
+</label><p>
+
+<label class="a">網站評分：</label>
+                  <div class="rating">
+     
+                     <input type="radio" id="star5" name="rating5" value="5" hidden/>
+                     <label for="star5"></label>
+                     <input type="radio" id="star4" name="rating4" value="4" hidden/>
+                     <label for="star4"></label>
+                     <input type="radio" id="star3" name="rating3" value="3" hidden/>
+                     <label for="star3"></label>
+                     <input type="radio" id="star2" name="rating2" value="2" hidden/>
+                     <label for="star2"></label>
+                     <input type="radio" id="star1" name="rating1" value="1" hidden/>
+                     <label for="star1"></label>
+                  </div><p>
+
+<label class="a">
+<span>還有想了解中原哪部分:</span><br>
+<textarea class="input" id="message" name="message" placeholder="Your Message to Us" rows="5" cols="50"></textarea>
+</label><p>
+
+
+<span>&nbsp;</span>
+<input type="button" class="button" value="送出" />
+<input type="reset" class="button" value="清除" />
+
+</form>
+</div>
+</body>
+</html>	

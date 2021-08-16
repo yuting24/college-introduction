@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>首頁</title>
+		
+		<style>
+		@import url("assets/Css/按鈕.css");
+		body{background-image: url(assets/Images/back.jpg); font-family:微軟正黑體;}
+			.slider_container {
+		
+		position: relative;
+		border-color: #fff;
+		border-bottom-width: 100px;
+		background-color: #f5f5f5;
+		box-shadow: #666 0 0 5px;
+		}
+		.slider_container div {
+		width: 1260px;
+		height: 500px;	
+		position: absolute;
+		top:90%;
+		opacity: 0;
+		filter: alpha(opacity=0);
+		}
+		.slider_container div {
+		-webkit-animation: round 35s linear infinite;
+		animation: round 35s linear infinite;
+		}
+		@-webkit-keyframes round {
+		4% {
+		opacity: 1;
+		filter: alpha(opacity=100);
+		/* 0 - 1秒 淡入*/
+		}
+		20% {
+		opacity: 1;
+		filter: alpha(opacity=100);
+		/* 1- 5秒靜止*/
+		}
+		24% {
+		opacity: 0;
+		filter: alpha(opacity=0);
+		/* 5-6秒淡出*/
+		}
+		}
+		@keyframes round {
+		4% {
+		opacity: 1;
+		filter: alpha(opacity=100);
+		/* 0 - 1秒 淡入*/
+		}
+		20% {
+		opacity: 1;
+		filter: alpha(opacity=100);
+		/* 1- 5秒靜止*/
+		}
+		24% {
+		opacity: 0;
+		filter: alpha(opacity=0);
+		/* 5-6秒淡出*/
+		}
+		}
+		.slider_container div:nth-child(7) {
+		-webkit-animation-delay: 0s;
+		animation-delay: 0s;
+		}
+		.slider_container div:nth-child(6) {
+		-webkit-animation-delay: 5s;
+		animation-delay: 5s;
+		}
+		.slider_container div:nth-child(5) {
+		-webkit-animation-delay: 10s;
+		animation-delay: 10s;
+		}
+		.slider_container div:nth-child(4) {
+		-webkit-animation-delay: 15s;
+		animation-delay: 15s;
+		}
+		.slider_container div:nth-child(3) {
+		-webkit-animation-delay: 20s;
+		animation-delay: 20s;
+		}
+		.slider_container div:nth-child(2) {
+		-webkit-animation-delay: 25s;
+		animation-delay: 25s;
+		}
+		.slider_container div:nth-child(1) {
+		-webkit-animation-delay: 30s;
+		animation-delay: 30s;
+		}
+
+		div.menu{float: right; }
+
+		li.a{margin: 12px;}
+		
+		</style>
+	</head>
+	<body>
+		<img class="logo" src="assets/Images/logo2.png" width="25%" height="25%" alt="pure css3 slider">
+		<div id="menu">
+  <ul>
+    <li class="a"> <a href="index.html">首頁</a></li>
+
+    <li class="a"> <a href="創作理念.html">創作理念</a></li>
+
+    <li class="a"> <a href="影片.html">影片故事</a></li>
+
+     <li class="a"> <a href="意見回饋.html">意見回饋</a></li>
+
+    <li class="a"> <a href="">學院介紹</a>
+      <ul>
+        <li> <a href="商學院.html">商學院</a>
+          
+        </li>
+
+        <li> <a href="工學院.html">工學院</a>
+          
+        </li>
+
+        <li> <a href="設計學院.html">設計學院</a>
+          
+        </li>
+
+        <li> <a href="理學院.html">理學院</a>
+          
+        </li>
+
+        <li> <a href="法學院.html">法學院</a>
+          
+        </li>
+
+        <li> <a href="人文學院.html">人文與教育學院</a>
+          
+        </li>
+
+        <li> <a href="電資學院.html">電機資訊學院</a>
+          
+        </li>
+      </ul>
+    </li>
+
+    <li class="a"><a href="組員.html">關於&聯絡我們</a></li>
+  </ul>
+</div>
+
+<div class="slider_container">
+<div>
+<a href="設計學院.html"><img src="assets/Images/01.jpg" width="1510" height="630"   alt="pure css3 slider" /></a>
+</div>
+<div>
+<a href="商學院.html"><img src="assets/Images/02.jpg" width="1510" height="630" alt="pure css3 slider" /></a>
+</div>
+<div>
+<a href="法學院.html"><img src="assets/Images/03.jpg" width="1510" height="630" alt="pure css3 slider" /></a>
+</div>
+<div>
+<a href="人文學院.html"><img src="assets/Images/04.jpg" width="1510" height="630" alt="pure css3 slider" /></a>
+</div>
+<div>
+<a href="電資學院.html"><img src="assets/Images/05.jpg" width="1510" height="630" alt="pure css3 slider" /></a>
+</div>
+<div>
+<a href="理學院.html"><img src="assets/Images/06.jpg " width="1510" height="630" alt="pure css3 slider" /></a>
+</div>
+<div>
+<a href="工學院.html"><img src="assets/Images/07.jpg" width="1510" height="630" alt="pure css3 slider" /></a>
+</div>
+</div>
+
+</body>
+</html>
